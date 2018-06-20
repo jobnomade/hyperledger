@@ -1,0 +1,22 @@
+/**
+Model for participants within the business application network
+ */
+namespace org.acme.airline.participant
+
+
+abstract participant ACMEParticipant identified by participantKey {
+  o String participantKey
+
+}
+
+participant ACMENetworkAdmin extends ACMEParticipant{
+
+}
+
+participant ACMEPersonal extends ACMEParticipant{
+  o String department
+}
+
+participant B2BPartner extends ACMEParticipant{
+
+}
