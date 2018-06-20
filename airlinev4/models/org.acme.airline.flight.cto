@@ -1,11 +1,20 @@
 namespace org.acme.airline.flight
 
+// Import a different namespace
+import org.acme.airline.aircraft.Aircraft
+
 asset Flight identified by flightNumber {
   o String flightNumber
   o Route route
 
   // Arrays can be of any type
   o String[] aliasFlightNumber
+ 
+  /**
+   Relation to aircraft, set as optional as the Flight can be created but 
+   not assigned yet with a Aircraft after creation
+   */
+  --> Aircraft aircraft optional
 }
 
 concept Route {
