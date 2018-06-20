@@ -6,7 +6,16 @@ namespace org.acme.airline.participant
 
 abstract participant ACMEParticipant identified by participantKey {
   o String participantKey
+  o Contact contact
+}
 
+/**
+Concept can be used as a property in other models
+ */
+concept Contact {
+  o String fName
+  o String lName
+  o String email
 }
 
 participant ACMENetworkAdmin extends ACMEParticipant{
