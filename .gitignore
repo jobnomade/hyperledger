@@ -1,3 +1,4 @@
 devenv/.vagrant
 tutorial-network/tutorial-network/package-lock.json
 .DS_Store
+devenv/ubuntu-xenial-16.04-cloudimg-console.log
